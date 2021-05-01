@@ -1,2 +1,38 @@
+#Fila de Vacinação.
 
-<h1>Teste</h1>
+1 - Funcionalidades:
+    1.1 - Cadastro de Pacientes.
+    1.2 - Listas Todos os Pacientes.
+    1.3 - Listar Pascientes Por Fase.
+    
+2 - Cadastro de Clientes - Funcionamento:
+    2.1 - O usuário poderá cadastrar quantos pascientes forem necessários.
+    2.2 - Formulário inteligente, ele irá pedir apenas os campos necessarios para refinir a fase em que o pasciente se encontra.
+    
+3 - Listagem de Pascientes:
+    3.1 - Listagem única sem filtro de fase.
+    3.2 - Listagem por fase, basta selecionar a fase que será listado apenas os pascientes da mesma.
+    
+4 - Estrutura utilizada:
+    4.1 - Pilha Dinamica de Ponteiros
+    4.2 - Estrutura:
+          Pessoa{
+            char nome[100];
+            int idade;
+            int fase;
+            int prof_saude;
+          };
+          
+          Celula{
+            Pessoa dado;
+            struct Celula *prox;
+          };
+          
+          Fila{
+            Celula *inicio;
+            Celula *fim;
+            int tam;
+          };
+                        
+          
+    
