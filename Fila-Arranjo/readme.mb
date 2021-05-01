@@ -1,0 +1,36 @@
+#Fila de vacinação covid 19
+__________________________________
+
+1- A primeira tela é o menu principal do programa. Nela há 5 opções:
+
+-Inserir novo paciente a fila
+-Remover paciente da fila
+-Mostrar fila completa
+-Mostrar fila por fase
+-Sair
+
+Um input do usuário é solicitado, e ele deve escolher digitando o número relacionado a cada opção. Caso seja digitado algo não listado, o comando será ignorado e o menu reiniciado.
+
+2- Como inserir na fila:
+
+Ao apertar 1, o menu principal desaparecera e o usuário deve digitar as informações de acordo como requisitado pelo programa.
+Dependendo das informações recebidas pelo usuário, o programa já determina o nível de prioridade do paciente e retorna ao menu principal, já inserindo o paciente no lugar correto na fila.
+
+ex.: Caso o paciente tenha mais que 74 anos, apos a inserção dessa informação, não é mais necessário inserir demais informações, uma vez que já eh possível determinar a fase no qual a pessoa pertence.
+
+3- Como remover da fila
+
+A fila sege o modelo FIFO(first in, first out) logo ao pedir a remoção a primeira pessoa da fila será removida.
+obs.:esse comando não possui mensagem, logo após sua seleção o menu inicial ira reiniciar, removendo o paciente no processo.
+
+4- Mostrar fila completa:
+
+Essa opção apenas mostra na ordem com prioridade os pacientes inseridos na fila
+
+5- Mostrar fila por fase
+
+Após a seleção dessa opção, o usuário é levado a um outro menu, no qual deve escolher qual fase de vacinação deseja visualizar os pacientes. Caso não haja nenhum na fase desejada, uma mensagem é impressa informando.
+
+6- Limites do programa.
+
+O tamanho máximo da fila são 10 registros, e é possível utilizar nomes de até 25 caracteres ascii.
